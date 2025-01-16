@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -37,12 +36,6 @@ p, a {
   overflow: hidden;
 }
 
-@media (max-width: 1200px) {
-  .container {
-    width: 100%; /* Контейнер растягивается по ширине устройства */
-    overflow: hidden; /* Обрезает всё, что выходит */
-  }
-}
 .header {
   position: fixed;
   width: 100%;
