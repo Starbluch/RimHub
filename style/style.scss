@@ -42,6 +42,13 @@ p,a {
     padding: 0;
     height: auto;
     margin: 0 auto;
+    overflow: hidden;
+}
+@media (max-width: 1200px) {
+    .container {
+        width: 100%; /* Контейнер растягивается по ширине устройства */
+        overflow: hidden; /* Обрезает всё, что выходит */
+      }
 }
 
 .header {
