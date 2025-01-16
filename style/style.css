@@ -162,6 +162,9 @@ p, a {
 }
 
 .header-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
