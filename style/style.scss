@@ -1016,6 +1016,7 @@ p,a {
 }
 @media (max-width: 576px) {
     .footer__social{
+        margin-left: 10px;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
     }
@@ -1082,5 +1083,11 @@ p,a {
     .footer{
         height: auto;
         padding: 10px;
+    }
+}
+@media (max-width: 350px) {
+    .footer{
+        height: auto;
+        padding: 3px;
     }
 }
