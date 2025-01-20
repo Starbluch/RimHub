@@ -830,7 +830,7 @@ p, a {
 }
 @media (max-width: 576px) {
   .footer .footer__title {
-    font-size: 11px;
+    font-size: 10px;
   }
 }
 .footer .footer__contact .contact {
@@ -838,7 +838,7 @@ p, a {
 }
 @media (max-width: 576px) {
   .footer .footer__contact .contact {
-    width: 160px;
+    width: 125px;
   }
 }
 .footer .footer__contact .contact__item-1 {
@@ -862,7 +862,7 @@ p, a {
 }
 @media (max-width: 576px) {
   .footer .footer__contact .contact__item-1 .item__text {
-    font-size: 10px;
+    font-size: 9px;
     margin-bottom: 0;
   }
   .footer .footer__contact .contact__item-1 .img {
@@ -889,7 +889,7 @@ p, a {
 }
 @media (max-width: 576px) {
   .footer .footer__contact .contact__item-2 .item__text {
-    font-size: 10px;
+    font-size: 9px;
     margin-bottom: 0;
   }
   .footer .footer__contact .contact__item-2 .img {
@@ -916,7 +916,7 @@ p, a {
 }
 @media (max-width: 576px) {
   .footer .footer__contact .contact__item-3 .item__text {
-    font-size: 10px;
+    font-size: 9px;
     margin-bottom: 0;
     width: a;
   }
@@ -938,7 +938,7 @@ p, a {
   .footer .navbar .nav__item .navbar__item {
     margin: 0 0 10px 0;
     list-style-type: none;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
   }
 }
