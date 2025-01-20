@@ -1035,7 +1035,7 @@ p,a {
     @media (max-width: 425px) {
         .social__image {
             .image__item {
-                margin: 2px;
+                margin: 0;
                 img {
                     width:15px;
                     height:15px;
@@ -1080,6 +1080,7 @@ p,a {
 }
 @media (max-width: 576px) {
     .footer{
+        height: auto;
         padding: 10px;
     }
 }
