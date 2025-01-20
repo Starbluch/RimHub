@@ -68,7 +68,6 @@ p,a {
     transform: translateX(-50%);
     z-index: 10;
 
-
     .collapse{
         .nav__social {
             height: 45px;
@@ -121,6 +120,9 @@ p,a {
     }
 
     .navbar-header {
+        .navbar-toggle {
+            float: right; /* Перемещаем бургер-меню вправо */
+        }
         .img {
             width: 70px;
             height: auto;
@@ -206,12 +208,13 @@ p,a {
     background-position: center;
 
     .header__info {
-
-        width: 850px;
-        height: 225px;
+        width: 100%;
+        max-width: 850px;
+        height: auto;
         color: $color_text_1;
 
         .info__title {
+            width: 900px;
             text-transform: uppercase;
             font-size: 48px;
             font-weight: 700;
@@ -227,6 +230,7 @@ p,a {
         }
 
         .info__button {
+            display: block;
             width: 210px;
             height: 65px;
             margin-left: 5px;
@@ -262,13 +266,36 @@ p,a {
                 height: 60px;
             }
             .info__button {
+                display: block;
                 width: 250px;
                 margin-left: 120px;
             }
         }
-    }
+        @media (max-width: 576px) {
+            .info__title {
+                text-align: center;
+                width: 300px;
+                margin: 0 auto;
+            }
+            .info__paragraph {
+                font-size: 14px;
+                padding: 0 20px;
+                width: 100%;
+                height: auto;
+            }
+            .info__button {
+                display: block;
+                width: 150px;
+                height: 50px;
+                margin: 0  auto;
+                font-size: 16px;
 
+            }
+
+        }
+    }
 }
+
 @media (max-width: 1199px) {
     .section__header {
         padding: 230px 0 320px 15%;
@@ -277,6 +304,12 @@ p,a {
 @media (max-width: 992px) {
     .section__header {
         padding: 230px 0 320px 7%;
+    }
+}
+@media (max-width:576px) {
+    .section__header {
+        height: 550px;
+        padding: 230px 0 320px 0;
     }
 }
 
