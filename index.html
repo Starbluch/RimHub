@@ -90,7 +90,35 @@
                 </nav>
             </div>
         </header> -->
-        <section class="header-container ">
+        <section class="header-container slider">
+            <div class="section__header">
+                <div class="header__info">
+                    <h1 class="info__title">
+                        Освітній центр для ріелторів
+                    </h1>
+                    <p class="info__paragraph">
+                        Професійне навчання та сертифікація для ріелторів: 
+                        підвищуйте кваліфікацію та досягайте нових висот у кар'єрі!
+                    </p>
+                    <button class="info__button">
+                        До курсів
+                    </button>
+                </div>
+            </div>
+            <div class="section__header">
+                <div class="header__info">
+                    <h1 class="info__title">
+                        Освітній центр для ріелторів
+                    </h1>
+                    <p class="info__paragraph">
+                        Професійне навчання та сертифікація для ріелторів: 
+                        підвищуйте кваліфікацію та досягайте нових висот у кар'єрі!
+                    </p>
+                    <button class="info__button">
+                        До курсів
+                    </button>
+                </div>
+            </div>
             <div class="section__header">
                 <div class="header__info">
                     <h1 class="info__title">
@@ -553,8 +581,6 @@
                     </div>
                 </div>
             </footer>
-           
-
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -569,8 +595,30 @@
                 centerMode: true,
                 slidesToShow: 1,    
                 slidesToScroll: 1,
+                prevArrow: '<button class="speakers__prev"><img src="assets/Icons/icon-9.png" alt="Previous"></button>',
+                nextArrow: '<button class="speakers__next"><img src="assets/Icons/icon-8.png" alt="Next"></button>'
             });
         });
+        $(document).ready(function(){
+            console.log("Slick is initializing...");
+        $('.slider').slick({
+            infinite: true, 
+            slidesToShow: 1, 
+            slidesToScroll: 1, 
+            dots: true, 
+            arrows: true, 
+            autoplay: true, 
+            autoplaySpeed: 3000, 
+            prevArrow: '<button class="header__prev"><img src="assets/Icons/icon-11.png" alt="Previous"></button>',
+            nextArrow: '<button class="header__next"><img src="assets/Icons/icon-10.png" alt="Next"></button>'
+            
+        });
+        if (window.innerWidth <= 1199) {
+        document.querySelectorAll('.header__next, .header__prev').forEach(el => {
+        el.style.display = 'none';
+    });
+}
+    });
     </script>
 </body>
 </html>
