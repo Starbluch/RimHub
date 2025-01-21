@@ -307,6 +307,11 @@ p, a {
   }
 }
 
+@media (max-width: 576px) {
+  .section__header {
+    height: 500px;
+  }
+}
 .main {
   width: 100%;
   max-width: 1920px;
