@@ -7,6 +7,12 @@
 }
 
 @font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "Ermilov";
   src: url("../fonts/Ermilov-bold.otf") format("opentype");
   font-weight: bold;
@@ -475,7 +481,7 @@ p, a {
   margin-left: 20px;
   font-size: 15px;
   font-weight: 300;
-  color: #4e4e4e;
+  color: #a8a8a8;
 }
 .curses__cards .cards-item .item__star {
   margin: 10px 0 10px 20px;
@@ -669,7 +675,7 @@ p, a {
   width: 100%;
   height: auto;
   color: #ffffff;
-  background-color: rgba(92, 46, 3, 0.85);
+  background-color: #744D29;
 }
 .speakers__content .speakers__text .text__title {
   margin: 0 15px 0 190px;

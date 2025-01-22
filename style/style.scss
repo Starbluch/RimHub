@@ -1,16 +1,24 @@
 $color_text_1:#ffffff;
 $color_text_2:#000000;
-$color_text_3: #4e4e4e;
+$color_text_3: #a8a8a8;
 $color_1:rgb(92, 46, 3, 0.85);
 $color_2:#5C2E03;
 $color_3:#ffffff;
 $color__animation: #d26500;
+$slider__color:#744D29;
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     border: none;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-style:normal;
 }
 
 @font-face {
@@ -711,7 +719,7 @@ p,a {
         width: 100%;
         height: auto;
         color:$color_text_1;
-        background-color: $color_1;
+        background-color: $slider__color;
         
         .text__title {
             margin:0 15px 0 190px;
@@ -922,6 +930,7 @@ p,a {
             height: auto;
         }
         .item__text {
+            font-family: 'Roboto'!important;
             width: 150px;
             height: 20px;
             margin-left: 15px;
@@ -929,7 +938,7 @@ p,a {
             line-height: 25px;
             font-size: 16px;
             font-weight: 300;
-            color: $color_text_1;
+            color: $color_text_3;
         }
         @media (max-width: 576px) {
             .item__text {
@@ -950,13 +959,14 @@ p,a {
             margin: auto 0;
         }
         .item__text {
+            font-family: 'Roboto'!important;
             margin-left: 15px;
             width: 200px;
             height: 20px;
             line-height: 28px;
             font-size: 16px;
             font-weight: 300;
-            color: $color_text_1;
+            color: $color_text_3;
         }
         @media (max-width: 576px) {
             .item__text {
@@ -977,13 +987,14 @@ p,a {
             margin: auto 0;
         }
         .item__text {
+            font-family: 'Roboto'!important;
             margin-left: 15px;
             width: 200px;
             height: 20px;
             line-height: 21px;
             font-size: 16px;
             font-weight: 300;
-            color: $color_text_1;
+            color: $color_text_3;
         }
         @media (max-width: 576px) {
             .item__text {
@@ -1003,13 +1014,14 @@ p,a {
 .navbar {
     .nav__item {
         text-decoration: none;
-        color: $color_text_1;
+        color: $color_text_3;
 
         .navbar__item {
             margin: 14px 0 14px 0;
             list-style-type: none;
             font-size: 18px;
             font-weight: 400;
+            font-family: 'Roboto'!important;
         }
         @media (max-width: 576px) {
             .navbar__item {
