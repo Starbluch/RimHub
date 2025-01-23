@@ -514,6 +514,8 @@ p, a {
   font-weight: 500;
   text-decoration: none;
   color: #ffffff;
+  align-items: center;
+  display: flex;
 }
 .curses__cards .cards-item .item__bottom .img {
   width: 20px;
@@ -870,6 +872,7 @@ p, a {
   height: auto;
 }
 .footer .footer__contact .contact__item-1 .item__text {
+  font-family: "Roboto" !important;
   width: 150px;
   height: 20px;
   margin-left: 15px;
@@ -877,7 +880,7 @@ p, a {
   line-height: 25px;
   font-size: 16px;
   font-weight: 300;
-  color: #ffffff;
+  color: #a8a8a8;
 }
 @media (max-width: 576px) {
   .footer .footer__contact .contact__item-1 .item__text {
@@ -898,13 +901,14 @@ p, a {
   margin: auto 0;
 }
 .footer .footer__contact .contact__item-2 .item__text {
+  font-family: "Roboto" !important;
   margin-left: 15px;
   width: 200px;
   height: 20px;
   line-height: 28px;
   font-size: 16px;
   font-weight: 300;
-  color: #ffffff;
+  color: #a8a8a8;
 }
 @media (max-width: 576px) {
   .footer .footer__contact .contact__item-2 .item__text {
@@ -925,13 +929,14 @@ p, a {
   margin: auto 0;
 }
 .footer .footer__contact .contact__item-3 .item__text {
+  font-family: "Roboto" !important;
   margin-left: 15px;
   width: 200px;
   height: 20px;
   line-height: 21px;
   font-size: 16px;
   font-weight: 300;
-  color: #ffffff;
+  color: #a8a8a8;
 }
 @media (max-width: 576px) {
   .footer .footer__contact .contact__item-3 .item__text {
@@ -945,13 +950,14 @@ p, a {
 }
 .footer .navbar .nav__item {
   text-decoration: none;
-  color: #ffffff;
+  color: #a8a8a8;
 }
 .footer .navbar .nav__item .navbar__item {
   margin: 14px 0 14px 0;
   list-style-type: none;
   font-size: 18px;
   font-weight: 400;
+  font-family: "Roboto" !important;
 }
 @media (max-width: 576px) {
   .footer .navbar .nav__item .navbar__item {
