@@ -5,91 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="script/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="script/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="script/bootstrap-3.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/style.scss">
     <title>Главная</title>
 </head>
 <body>
     <div class="container">
-        <!-- <header class="header">
+        <nav class="navbarr navbar-default">
             <div class="container-fluid">
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        
-                        <div class="navbar-header ">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#">
-                                <img src="assets/image/logo.png" alt="logo" class="img">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/image/logo.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav_item"><a href="#">Про нас</a></li>
+                        <li class=" nav_item dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Курси
+                                <span class="caret"></span>
                             </a>
-                        </div>
-
-                        
-                        <div class="collapse navbar-collapse navbar-right" id="navbar-menu">
-                            <div class="nav navbar-nav">
-                                <div class="nav__link"><a href="#">Про нас</a></div>
-                                
-                                <div class="nav__link nav__button">
-                                    <button type="button" class="btn" data-toggle="dropdown">
-                                        Курси
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu ">
-                                        <div class="menu__item col-md-2 col-md-offset-2">
-                                            <ul>
-                                                <li class="item"><a href="#">Інвестування</a></li>
-                                                <li class="item"><a href="#">Економіка професії</a></li>
-                                                <li class="item"><a href="#">Житлова нерухомість</a></li>
-                                                <li class="item"><a href="#">Земля</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="menu__item col-md-2">
-                                            <ul>
-                                                <li class="item"><a href="#">Інвестування</a></li>
-                                                <li class="item"><a href="#">Економіка професії</a></li>
-                                                <li class="item"><a href="#">Житлова нерухомість</a></li>
-                                                <li class="item"><a href="#">Земля</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="menu__item col-md-2">
-                                            <ul>
-                                                <li class="item"><a href="#">Інвестування</a></li>
-                                                <li class="item"><a href="#">Економіка професії</a></li>
-                                                <li class="item"><a href="#">Житлова нерухомість</a></li>
-                                                <li class="item"><a href="#">Земля</a></li>
-                                            </ul>
-                                        </div>
-                                    </ul>
+                            <ul class="dropdown-menu">
+                                <div class="menu">
+                                    <div class="dropdown__menu__item">
+                                        <li><a href="#">Інвестування</a></li>
+                                        <li><a href="#">Економіка професії. Як бути успішним</a></li>
+                                        <li><a href="#">Житлова нерухомість</a></li>
+                                        <li><a href="#">Земля</a></li>
+                                    </div>
+                                    <div class="dropdown__menu__item">
+                                        <li><a href="#">Інвестування</a></li>
+                                        <li><a href="#">Економіка професії. Як бути успішним</a></li>
+                                        <li><a href="#">Житлова нерухомість</a></li>
+                                        <li><a href="#">Земля</a></li>
+                                    </div>
+                                    <div class="dropdown__menu__item">
+                                        <li><a href="#">Інвестування</a></li>
+                                        <li><a href="#">Економіка професії. Як бути успішним</a></li>
+                                        <li><a href="#">Житлова нерухомість</a></li>
+                                        <li><a href="#">Земля</a></li>
+                                    </div>
                                 </div>
-                                
-                                <div class="nav__link"><a href="#">Контакти</a></div>
-                                <div class="nav__link"><a href="#">Блог</a></div>
-                                <div class="nav__link"><a href="#">Спікери</a></div>
-                            </div>
-                            <ul class="nav__social navbar-nav navbar-right">
-                                <li class="nav__social__links">
-                                    <a href="#" class="social__links-1"><img class="social__links__image" src="assets/Icons/icon-1.png" alt=""></a>
-                                </li>
-                                <li class="nav__social__links">
-                                    <a href="#" class="social__links-1"><img class="social__links__image" src="assets/Icons/icon-2.png" alt=""></a>
-                                </li>
-                                <li class="nav__social__links">
-                                    <a href="#" class="social__links-1"><img class="social__links__image" src="assets/Icons/icon-3.png" alt=""></a>
-                                </li>
-                                <li class="nav__social__links">
-                                    <a href="#" class="social__links-1"><img class="social__links__image" src="assets/Icons/icon-4.png" alt=""></a>
-                                </li>
                             </ul>
-                        </div>
-                    </div>
-                </nav>
+                        </li>
+                        <li class="nav_item"><a href="#">Контакти</a></li>
+                        <li class="nav_item"><a href="#">Блог</a></li>
+                        <li class="nav_item"><a href="#">Спікери</a></li>
+                        <li class=" nav_item soc_container">
+                            <span class="soc_item">
+                                <a href="#" class="soc_link">
+                                    <img src="assets/Icons/icon-1.png" alt="" class="img">
+                                </a>
+                            </span>
+                            <span class="soc_item">
+                                <a href="#" class="soc_link">
+                                    <img src="assets/Icons/icon-2.png" alt="" class="img">
+                                </a>
+                            </span>  
+                            <span class="soc_item">
+                                <a href="#" class="soc_link">
+                                    <img src="assets/Icons/icon-3.png" alt="" class="img">
+                                </a>
+                            </span>  
+                            <span class="soc_item">
+                                <a href="#" class="soc_link">
+                                    <img src="assets/Icons/icon-4.png" alt="" class="img">
+                                </a>
+                            </span>  
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </header> -->
+        </nav>
+
+
+        
         <section class="header-container slider">
             <div class="section__header">
                 <div class="header__info">
@@ -136,12 +133,23 @@
         </section> 
 
             <main class="main"> 
+                <div class="title__cont">
+                    <div class="main__title">
+                        <h1 class="main__title__h1">
+                            Про нас
+                        </h1>
+
+                    </div>
+                    <div class="main__title__line">
+                        <h1 class="main__title__h1__line">
+                            Про нас
+                            <hr class="main__title__hr__line">
+                        </h1>
+                    </div>
+                </div>
 
                 <div class="about-container">
                     <section class="about">
-                            <h2 class="about__title">
-                                Про нас
-                            </h2>
                             <p class="about__paragraph">
                                 Dr. NATALYA FAZYLOVA, эксперт в нишевых услугах эстетической медицины с 
                                 15+ лет опыта, основатель Rebalance Beauty and Wellness Center
@@ -153,18 +161,25 @@
                             </p>
                     </section>
                 </div>
-
-                <div class="curses__title">
-                    <h1 class="curses__title__h1">
-                        Наші курси
-                    </h1>
+                <div class="title__cont">
+                    <div class="main__title__item_2">
+                        <h1 class="main__title__h1__item_2">
+                            Наші курси
+                        </h1>
+                    </div>
+                    <div class="main__title__line__item_2">
+                        <h1 class="main__title__h1__line__item_2">
+                            Наші курси
+                            <hr class="main__title__hr__line__item_2">
+                        </h1>
+                    </div>
                 </div>
 
                 <div class="curses-container">
                     <section class="curses">
                         
                         <div class="curses__cards">
-                            <div class="cards-item">
+                            <div class="cards-item" data-item-id="1">
                                 <div class="item__image">
                                     <img src="assets/image/img-2.png" alt="cards" class="img">
                                 </div>
@@ -174,13 +189,102 @@
                                 <p class="item__subtitle">
                                     Інвестування
                                 </p>
-
-                                <div class="item__star">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img"> 
+                                <div class="half-stars">
+                                    <div class="reting__none"></div>
+                                    <div class="rating-group">
+                                        <!-- по умолчанию 0 -->
+                                        <input disabled checked name="hsr-1" value="0" type="radio">
+                                        
+                                        <!-- рейтинг 0.5 -->    
+                                        <label class="hsr" for="hsr-1-05"> 
+                                            
+                                            <svg id="mySVG" width="100%" height="100%"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+        
+                                        </label>
+                                        <input name="hsr-1" id="hsr-1-05" value="0.5" type="radio">
+                                        
+                                        <!-- рейтинг 1 -->    
+                                        <label class="sar" for="hsr-1-10">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-1" id="hsr-1-10" value="1" type="radio">
+                                        
+                                        <!-- рейтинг 1.5 -->    
+                                        <label class="hsr" for="hsr-1-15">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+    
+                                        </label>
+                                        <input name="hsr-1" id="hsr-1-15" value="1.5" type="radio">
+                                        
+                                        <!-- рейтинг 2 -->    
+                                        <label class="sar" for="hsr-1-20">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-1" id="hsr-1-20" value="2" type="radio">
+                                        
+                                        <!-- рейтинг 2.5 -->    
+                                        <label class="hsr" for="hsr-1-25">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+        
+                                        </label>
+                                        <input name="hsr-1" id="hsr-1-25" value="2.5" type="radio">
+                                        
+                                        <!-- рейтинг 3 -->    
+                                        <label class="sar" for="hsr-1-30">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-1" id="hsr-1-30" value="3" type="radio">
+                                        
+                                        <!-- рейтинг 3.5 -->    
+                                        <label class="hsr" for="hsr-1-35">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+        
+                                        </label>
+                                        <input name="hsr-1" id="hsr-1-35" value="3.5" type="radio">
+                                        
+                                        <!-- рейтинг 4 -->    
+                                        <label class="sar" for="hsr-1-40">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-1" id="hsr-1-40" value="4" type="radio">
+                                        
+                                        <!-- рейтинг 4.5 -->    
+                                        <label class="hsr" for="hsr-1-45">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+        
+                                        </label>
+                                        <input name="hsr-1" id="hsr-1-45" value="4.5" type="radio">
+                                        
+                                        <!-- рейтинг 5 -->    
+                                        <label class="sar" for="hsr-1-50">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-1" id="hsr-1-50" value="5" type="radio">
+                                    </div>
                                 </div>
 
                                 <div class="item__bottom">
@@ -196,7 +300,7 @@
                                 </div>
                                 
                             </div>
-                            <div class="cards-item">
+                            <div class="cards-item" data-item-id="2">
                                 <div class="item__image">
                                     <img src="assets/image/img-3.png" alt="cards" class="img">
                                 </div>
@@ -207,12 +311,102 @@
                                     Інвестування
                                 </p>
 
-                                <div class="item__star">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img"> 
+                                <div class="half-stars">
+                                    <div class="reting__none"></div>
+                                    <div class="rating-group">
+                                        <!-- по умолчанию 0 -->
+                                        <input disabled checked name="hsr-2" value="0" type="radio">
+                                        
+                                        <!-- рейтинг 0.5 -->    
+                                        <label class="hsr" for="hsr-2-05"> 
+                                            
+                                            <svg id="mySVG" width="100%" height="100%"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+        
+                                        </label>
+                                        <input name="hsr-2" id="hsr-2-05" value="0.5" type="radio">
+                                        
+                                        <!-- рейтинг 1 -->    
+                                        <label class="sar" for="hsr-2-10">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-2" id="hsr-2-10" value="1" type="radio">
+                                        
+                                        <!-- рейтинг 1.5 -->    
+                                        <label class="hsr" for="hsr-2-15">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+    
+                                        </label>
+                                        <input name="hsr-2" id="hsr-2-15" value="1.5" type="radio">
+                                        
+                                        <!-- рейтинг 2 -->    
+                                        <label class="sar" for="hsr-2-20">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-2" id="hsr-2-20" value="2" type="radio">
+                                        
+                                        <!-- рейтинг 2.5 -->    
+                                        <label class="hsr" for="hsr-2-25">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+        
+                                        </label>
+                                        <input name="hsr-2" id="hsr-2-25" value="2.5" type="radio">
+                                        
+                                        <!-- рейтинг 3 -->    
+                                        <label class="sar" for="hsr-2-30">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-2" id="hsr-2-30" value="3" type="radio">
+                                        
+                                        <!-- рейтинг 3.5 -->    
+                                        <label class="hsr" for="hsr-2-35">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+        
+                                        </label>
+                                        <input name="hsr-2" id="hsr-2-35" value="3.5" type="radio">
+                                        
+                                        <!-- рейтинг 4 -->    
+                                        <label class="sar" for="hsr-2-40">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-2" id="hsr-2-40" value="4" type="radio">
+                                        
+                                        <!-- рейтинг 4.5 -->    
+                                        <label class="hsr" for="hsr-2-45">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+        
+                                        </label>
+                                        <input name="hsr-2" id="hsr-2-45" value="4.5" type="radio">
+                                        
+                                        <!-- рейтинг 5 -->    
+                                        <label class="sar" for="hsr-2-50">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-2" id="hsr-2-50" value="5" type="radio">
+                                    </div>
                                 </div>
 
                                 <div class="item__bottom">
@@ -228,7 +422,7 @@
                                 </div>
                                 
                             </div>
-                            <div class="cards-item">
+                            <div class="cards-item" data-item-id="3">
                                 <div class="item__image">
                                     <img src="assets/image/img-4.png" alt="cards" class="img">
                                 </div>
@@ -239,12 +433,102 @@
                                     Інвестування
                                 </p>
 
-                                <div class="item__star">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img"> 
+                                <div class="half-stars">
+                                    <div class="reting__none"></div>
+                                    <div class="rating-group">
+                                        <!-- по умолчанию 0 -->
+                                        <input disabled checked name="hsr-3" value="0" type="radio">
+                                        
+                                        <!-- рейтинг 0.5 -->    
+                                        <label class="hsr" for="hsr-3-05"> 
+                                            
+                                            <svg id="mySVG" width="100%" height="100%"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+        
+                                        </label>
+                                        <input name="hsr-3" id="hsr-3-05" value="0.5" type="radio">
+                                        
+                                        <!-- рейтинг 1 -->    
+                                        <label class="sar" for="hsr-3-10">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-3" id="hsr-3-10" value="1" type="radio">
+                                        
+                                        <!-- рейтинг 1.5 -->    
+                                        <label class="hsr" for="hsr-3-15">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+    
+                                        </label>
+                                        <input name="hsr-3" id="hsr-3-15" value="1.5" type="radio">
+                                        
+                                        <!-- рейтинг 2 -->    
+                                        <label class="sar" for="hsr-3-20">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-3" id="hsr-3-20" value="2" type="radio">
+                                        
+                                        <!-- рейтинг 2.5 -->    
+                                        <label class="hsr" for="hsr-3-25">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+        
+                                        </label>
+                                        <input name="hsr-3" id="hsr-3-25" value="2.5" type="radio">
+                                        
+                                        <!-- рейтинг 3 -->    
+                                        <label class="sar" for="hsr-3-30">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-3" id="hsr-3-30" value="3" type="radio">
+                                        
+                                        <!-- рейтинг 3.5 -->    
+                                        <label class="hsr" for="hsr-3-35">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+        
+                                        </label>
+                                        <input name="hsr-3" id="hsr-3-35" value="3.5" type="radio">
+                                        
+                                        <!-- рейтинг 4 -->    
+                                        <label class="sar" for="hsr-3-40">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-3" id="hsr-3-40" value="4" type="radio">
+                                        
+                                        <!-- рейтинг 4.5 -->    
+                                        <label class="hsr" for="hsr-3-45">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+        
+                                        </label>
+                                        <input name="hsr-3" id="hsr-3-45" value="4.5" type="radio">
+                                        
+                                        <!-- рейтинг 5 -->    
+                                        <label class="sar" for="hsr-3-50">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-3" id="hsr-3-50" value="5" type="radio">
+                                    </div>
                                 </div>
 
                                 <div class="item__bottom">
@@ -260,7 +544,7 @@
                                 </div>
                                 
                             </div>
-                            <div class="cards-item">
+                            <div class="cards-item" data-item-id="4">
                                 <div class="item__image">
                                     <img src="assets/image/img-2.png" alt="cards" class="img">
                                 </div>
@@ -271,12 +555,102 @@
                                     Інвестування
                                 </p>
 
-                                <div class="item__star">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img"> 
+                                <div class="half-stars">
+                                    <div class="reting__none"></div>
+                                    <div class="rating-group">
+                                        <!-- по умолчанию 0 -->
+                                        <input disabled checked name="hsr-4" value="0" type="radio">
+                                        
+                                        <!-- рейтинг 0.5 -->    
+                                        <label class="hsr" for="hsr-4-05"> 
+                                            
+                                            <svg id="mySVG" width="100%" height="100%"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-4" id="hsr-4-05" value="0.5" type="radio">
+                                        
+                                        <!-- рейтинг 1 -->    
+                                        <label class="sar" for="hsr-4-10">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-4" id="hsr-4-10" value="1" type="radio">
+                                        
+                                        <!-- рейтинг 1.5 -->    
+                                        <label class="hsr" for="hsr-4-15">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-4" id="hsr-4-15" value="1.5" type="radio">
+                                        
+                                        <!-- рейтинг 2 -->    
+                                        <label class="sar" for="hsr-4-20">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-4" id="hsr-4-20" value="2" type="radio">
+                                        
+                                        <!-- рейтинг 2.5 -->    
+                                        <label class="hsr" for="hsr-4-25">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-4" id="hsr-4-25" value="2.5" type="radio">
+                                        
+                                        <!-- рейтинг 3 -->    
+                                        <label class="sar" for="hsr-4-30">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-4" id="hsr-4-30" value="3" type="radio">
+                                        
+                                        <!-- рейтинг 3.5 -->    
+                                        <label class="hsr" for="hsr-4-35">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-4" id="hsr-4-35" value="3.5" type="radio">
+                                        
+                                        <!-- рейтинг 4 -->    
+                                        <label class="sar" for="hsr-4-40">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-4" id="hsr-4-40" value="4" type="radio">
+                                        
+                                        <!-- рейтинг 4.5 -->    
+                                        <label class="hsr" for="hsr-4-45">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-4" id="hsr-4-45" value="4.5" type="radio">
+                                        
+                                        <!-- рейтинг 5 -->    
+                                        <label class="sar" for="hsr-4-50">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-4" id="hsr-4-50" value="5" type="radio">
+                                    </div>
                                 </div>
 
                                 <div class="item__bottom">
@@ -292,7 +666,7 @@
                                 </div>
                                 
                             </div>
-                            <div class="cards-item">
+                            <div class="cards-item" data-item-id="5">
                                 <div class="item__image">
                                     <img src="assets/image/img-2.png" alt="cards" class="img">
                                 </div>
@@ -303,12 +677,102 @@
                                     Інвестування
                                 </p>
 
-                                <div class="item__star">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img"> 
+                                <div class="half-stars">
+                                    <div class="reting__none"></div>
+                                    <div class="rating-group">
+                                        <!-- по умолчанию 0 -->
+                                        <input disabled checked name="hsr-5" value="0" type="radio">
+                                        
+                                        <!-- рейтинг 0.5 -->    
+                                        <label class="hsr" for="hsr-5-05"> 
+                                            
+                                            <svg id="mySVG" width="100%" height="100%"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-5" id="hsr-5-05" value="0.5" type="radio">
+                                        
+                                        <!-- рейтинг 1 -->    
+                                        <label class="sar" for="hsr-5-10">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-5" id="hsr-5-10" value="1" type="radio">
+                                        
+                                        <!-- рейтинг 1.5 -->    
+                                        <label class="hsr" for="hsr-5-15">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-5" id="hsr-5-15" value="1.5" type="radio">
+                                        
+                                        <!-- рейтинг 2 -->    
+                                        <label class="sar" for="hsr-5-20">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-5" id="hsr-5-20" value="2" type="radio">
+                                        
+                                        <!-- рейтинг 2.5 -->    
+                                        <label class="hsr" for="hsr-5-25">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-5" id="hsr-5-25" value="2.5" type="radio">
+                                        
+                                        <!-- рейтинг 3 -->    
+                                        <label class="sar" for="hsr-5-30">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-5" id="hsr-5-30" value="3" type="radio">
+                                        
+                                        <!-- рейтинг 3.5 -->    
+                                        <label class="hsr" for="hsr-5-35">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-5" id="hsr-5-35" value="3.5" type="radio">
+                                        
+                                        <!-- рейтинг 4 -->    
+                                        <label class="sar" for="hsr-5-40">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-5" id="hsr-5-40" value="4" type="radio">
+                                        
+                                        <!-- рейтинг 4.5 -->    
+                                        <label class="hsr" for="hsr-5-45">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-5" id="hsr-5-45" value="4.5" type="radio">
+                                        
+                                        <!-- рейтинг 5 -->    
+                                        <label class="sar" for="hsr-5-50">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-5" id="hsr-5-50" value="5" type="radio">
+                                    </div>
                                 </div>
 
                                 <div class="item__bottom">
@@ -324,7 +788,7 @@
                                 </div>
                                 
                             </div>
-                            <div class="cards-item">
+                            <div class="cards-item" data-item-id="6">
                                 <div class="item__image">
                                     <img src="assets/image/img-3.png" alt="cards" class="img">
                                 </div>
@@ -335,12 +799,102 @@
                                     Інвестування
                                 </p>
 
-                                <div class="item__star">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img"> 
+                            
+                                <div class="half-stars"><div class="reting__none"></div>
+                                    <div class="rating-group">
+                                        <!-- по умолчанию 0 -->
+                                        <input disabled checked name="hsr-6" value="0" type="radio">
+                                        
+                                        <!-- рейтинг 0.5 -->    
+                                        <label class="hsr" for="hsr-6-05"> 
+                                            
+                                            <svg id="mySVG" width="100%" height="100%"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-6" id="hsr-6-05" value="0.5" type="radio">
+                                        
+                                        <!-- рейтинг 1 -->    
+                                        <label class="sar" for="hsr-6-10">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-6" id="hsr-6-10" value="1" type="radio">
+                                        
+                                        <!-- рейтинг 1.5 -->    
+                                        <label class="hsr" for="hsr-6-15">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-6" id="hsr-6-15" value="1.5" type="radio">
+                                        
+                                        <!-- рейтинг 2 -->    
+                                        <label class="sar" for="hsr-6-20">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-6" id="hsr-6-20" value="2" type="radio">
+                                        
+                                        <!-- рейтинг 2.5 -->    
+                                        <label class="hsr" for="hsr-6-25">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-6" id="hsr-6-25" value="2.5" type="radio">
+                                        
+                                        <!-- рейтинг 3 -->    
+                                        <label class="sar" for="hsr-6-30">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-6" id="hsr-6-30" value="3" type="radio">
+                                        
+                                        <!-- рейтинг 3.5 -->    
+                                        <label class="hsr" for="hsr-6-35">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-6" id="hsr-6-35" value="3.5" type="radio">
+                                        
+                                        <!-- рейтинг 4 -->    
+                                        <label class="sar" for="hsr-6-40">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-6" id="hsr-6-40" value="4" type="radio">
+                                        
+                                        <!-- рейтинг 4.5 -->    
+                                        <label class="hsr" for="hsr-6-45">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-6" id="hsr-6-45" value="4.5" type="radio">
+                                        
+                                        <!-- рейтинг 5 -->    
+                                        <label class="sar" for="hsr-6-50">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-6" id="hsr-6-50" value="5" type="radio">
+                                    </div>
                                 </div>
 
                                 <div class="item__bottom">
@@ -356,7 +910,7 @@
                                 </div>
                                 
                             </div>
-                            <div class="cards-item">
+                            <div class="cards-item" data-item-id="7">
                                 <div class="item__image">
                                     <img src="assets/image/img-4.png" alt="cards" class="img">
                                 </div>
@@ -367,12 +921,101 @@
                                     Інвестування
                                 </p>
 
-                                <div class="item__star">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img"> 
+                                <div class="half-stars"><div class="reting__none"></div>
+                                    <div class="rating-group">
+                                        <!-- по умолчанию 0 -->
+                                        <input disabled checked name="hsr-7" value="0" type="radio">
+                                        
+                                        <!-- рейтинг 0.5 -->    
+                                        <label class="hsr" for="hsr-7-05"> 
+                                            
+                                            <svg id="mySVG" width="100%" height="100%"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-7" id="hsr-7-05" value="0.5" type="radio">
+                                        
+                                        <!-- рейтинг 1 -->    
+                                        <label class="sar" for="hsr-7-10">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-7" id="hsr-7-10" value="1" type="radio">
+                                        
+                                        <!-- рейтинг 1.5 -->    
+                                        <label class="hsr" for="hsr-7-15">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-7" id="hsr-7-15" value="1.5" type="radio">
+                                        
+                                        <!-- рейтинг 2 -->    
+                                        <label class="sar" for="hsr-7-20">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-7" id="hsr-7-20" value="2" type="radio">
+                                        
+                                        <!-- рейтинг 2.5 -->    
+                                        <label class="hsr" for="hsr-7-25">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-7" id="hsr-7-25" value="2.5" type="radio">
+                                        
+                                        <!-- рейтинг 3 -->    
+                                        <label class="sar" for="hsr-7-30">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-7" id="hsr-7-30" value="3" type="radio">
+                                        
+                                        <!-- рейтинг 3.5 -->    
+                                        <label class="hsr" for="hsr-7-35">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-7" id="hsr-7-35" value="3.5" type="radio">
+                                        
+                                        <!-- рейтинг 4 -->    
+                                        <label class="sar" for="hsr-7-40">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-7" id="hsr-7-40" value="4" type="radio">
+                                        
+                                        <!-- рейтинг 4.5 -->    
+                                        <label class="hsr" for="hsr-7-45">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-7" id="hsr-7-45" value="4.5" type="radio">
+                                        
+                                        <!-- рейтинг 5 -->    
+                                        <label class="sar" for="hsr-7-50">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-7" id="hsr-7-50" value="5" type="radio">
+                                    </div>
                                 </div>
 
                                 <div class="item__bottom">
@@ -388,7 +1031,7 @@
                                 </div>
                                 
                             </div>
-                            <div class="cards-item">
+                            <div class="cards-item" data-item-id="8">
                                 <div class="item__image">
                                     <img src="assets/image/img-2.png" alt="cards" class="img">
                                 </div>
@@ -399,12 +1042,101 @@
                                     Інвестування
                                 </p>
 
-                                <div class="item__star">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img">
-                                    <img src="assets/Icons/star.svg" alt="star" class="img"> 
+                                <div class="half-stars"><div class="reting__none"></div>
+                                    <div class="rating-group">
+                                        <!-- по умолчанию 0 -->
+                                        <input disabled checked name="hsr-8" value="0" type="radio">
+                                        
+                                        <!-- рейтинг 0.5 -->    
+                                        <label class="hsr" for="hsr-8-05"> 
+                                            
+                                            <svg id="mySVG" width="100%" height="100%"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-8" id="hsr-8-05" value="0.5" type="radio">
+                                        
+                                        <!-- рейтинг 1 -->    
+                                        <label class="sar" for="hsr-8-10">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-8" id="hsr-8-10" value="1" type="radio">
+                                        
+                                        <!-- рейтинг 1.5 -->    
+                                        <label class="hsr" for="hsr-8-15">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-8" id="hsr-8-15" value="1.5" type="radio">
+                                        
+                                        <!-- рейтинг 2 -->    
+                                        <label class="sar" for="hsr-8-20">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-8" id="hsr-8-20" value="2" type="radio">
+                                        
+                                        <!-- рейтинг 2.5 -->    
+                                        <label class="hsr" for="hsr-8-25">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-8" id="hsr-8-25" value="2.5" type="radio">
+                                        
+                                        <!-- рейтинг 3 -->    
+                                        <label class="sar" for="hsr-8-30">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-8" id="hsr-8-30" value="3" type="radio">
+                                        
+                                        <!-- рейтинг 3.5 -->    
+                                        <label class="hsr" for="hsr-8-35">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-8" id="hsr-8-35" value="3.5" type="radio">
+                                        
+                                        <!-- рейтинг 4 -->    
+                                        <label class="sar" for="hsr-8-40">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-8" id="hsr-8-40" value="4" type="radio">
+                                        
+                                        <!-- рейтинг 4.5 -->    
+                                        <label class="hsr" for="hsr-8-45">
+                                            
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>
+                                
+                                        </label>
+                                        <input name="hsr-8" id="hsr-8-45" value="4.5" type="radio">
+                                        
+                                        <!-- рейтинг 5 -->    
+                                        <label class="sar" for="hsr-8-50">
+                                            <svg id="mySVG" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1.61804L12.9941 7.75532L13.1064 8.10081H13.4697H19.9228L14.7021 11.8939L14.4082 12.1074L14.5205 12.4529L16.5146 18.5902L11.2939 14.7971L11 14.5836L10.7061 14.7971L5.48542 18.5902L7.47954 12.4529L7.5918 12.1074L7.29791 11.8939L2.07722 8.10081H8.53035H8.89362L9.00587 7.75532L11 1.61804Z" stroke="#37C300"/>
+                                            </svg>            
+                                        </label>
+                                        <input name="hsr-8" id="hsr-8-50" value="5" type="radio">
+                                    </div>
                                 </div>
 
                                 <div class="item__bottom">
@@ -431,9 +1163,17 @@
                     </section>
                 </div>
 
-                <div class="speakers__title">
-                    <div class="speakers__title__div">
-                        <h1 class="speakers__title__h1">Наші спікери</h1>
+                <div class="title__cont">
+                    <div class="main__title__item_3">
+                        <h1 class="main__title__h1__item_3">
+                            Наші спікери                        
+                        </h1>
+                    </div>
+                    <div class="main__title__line__item_3">
+                        <h1 class="main__title__h1__line__item_3">
+                            Наші спікери
+                            <hr class="main__title__hr__line__item_3">
+                        </h1>
                     </div>
                 </div>
 
@@ -583,10 +1323,33 @@
             </footer>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script/bootstrap-3.4.1-dist/js/bootstrap.min.js" ></script>
     <script type="text/javascript" src="script/slick/slick.min.js"></script>
     <script>
+        //центрирования дроп меню хедер
+            $(document).ready(function() {
+            function centerDropdownMenu() {
+                var dropdown = $('.dropdown');
+                var dropdownMenu = dropdown.find('.dropdown-menu');
+                var dropdownWidth = dropdown.outerWidth();
+                var menuWidth = dropdownMenu.outerWidth();
+                var offset = (dropdownWidth - menuWidth) / 2;
+                dropdownMenu.css({
+                    'left': offset + 'px',
+                    'right': 'auto'
+                });
+            }
+            centerDropdownMenu();
+            $('.dropdown-toggle').click(function() {
+                centerDropdownMenu();
+            });
+            $('.dropdown').hover(function() {
+                centerDropdownMenu();
+            });
+        });
+
+
         $(document).ready(function(){
             console.log("Slick is initializing...");
     
@@ -619,6 +1382,66 @@
     });
 }
     });
+    $(document).ready(function() {
+    var defaultRating = 3.5;
+    
+    function updateRating(itemId, rating) {
+
+        var prefix = '#hsr-' + itemId + '-';
+
+
+        $('input[name="hsr_' + itemId + '"]').prop('disabled', true);
+
+        if (rating <= 0.5) {
+            $(prefix + '05').prop('checked', true);
+        } else if (rating <= 1) {
+            $(prefix + '10').prop('checked', true);
+        } else if (rating <= 1.5) {
+            $(prefix + '15').prop('checked', true);
+        } else if (rating <= 2) {
+            $(prefix + '20').prop('checked', true);
+        } else if (rating <= 2.5) {
+            $(prefix + '25').prop('checked', true);
+        } else if (rating <= 3) {
+            $(prefix + '30').prop('checked', true);
+        } else if (rating <= 3.5) {
+            $(prefix + '35').prop('checked', true);
+        } else if (rating <= 4) {
+            $(prefix + '40').prop('checked', true);
+        } else if (rating <= 4.5) {
+            $(prefix + '45').prop('checked', true);
+        } else if (rating >= 5) {
+            $(prefix + '50').prop('checked', true);
+        }
+    }
+
+    $('[data-item-id]').each(function() {
+        var itemId = $(this).data('item-id');
+        updateRating(itemId, defaultRating);
+    });
+
+    // Функция для получения рейтинга с сервера для каждого элемента 
+    function fetchRating(itemId) {
+        $.ajax({
+            url: '/get-rating',
+            method: 'GET',
+            data: { item_id: itemId },
+            success: function(data) {
+                var rating = data.rating || defaultRating; // Если данных нет от серва нету, ставлю по умолчанию 3.5
+                updateRating(itemId, rating);
+            },
+            error: function() {
+                console.error("Ошибка при получении рейтинга с сервера.");
+            }
+        });
+    }
+
+    // Вызов для получения рейтинга
+    // $('[data-item-id]').each(function() {
+    //     var itemId = $(this).data('item-id');
+    //     fetchRating(itemId);
+    // });
+});
     </script>
 </body>
 </html>
