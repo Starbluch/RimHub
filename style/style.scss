@@ -64,13 +64,18 @@ p,a {
 }
 
 .navbarr {
-    max-width: 1200px;
-    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    max-width: 1920px;
     background-color: #ffffff;
     border: none;
     height: 100px;
+    z-index: 999;
     .container-fluid {
-
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+        background-color: #ffffff;
 
         .navbar-header {
             min-height: 70px;
@@ -221,13 +226,6 @@ p,a {
         height: auto;
     }
 }
-
-
-
-
-
-
-
 
 
 .header-container {
